@@ -11,6 +11,11 @@
     --white-color: #fff;
 }
 
+.light-mode {
+    --dark-blueish: #cfbc0c;
+    --dark-pinkish: black;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -33,11 +38,37 @@
     font-size: 30px;
     width: 70px;
     line-height: 50px;
+    text-align: center;
 }
 
 .sidebar .logo-details .logo-name {
     font-size: 22px;
+    font-weight: bold;
     line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .nav-links {
+    padding: 30px;
+    height: calc(100% - 60px);
+}
+
+.sidebar .nav-links ul li {
+    list-style: none;
+}
+
+.sidebar .nav-links ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.sidebar .nav-links ul li a i {
+    font-size: 22px;
+}
+
+.sidebar .nav-links ul li a .link-name {
+    font-size: 18px;
 }
 
 .main-content {
